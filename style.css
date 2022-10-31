@@ -1,0 +1,211 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Whyte Inktrap Super';
+    src: url('fonts/WhyteInktrap-Super.eot');
+    src: url('fonts/WhyteInktrap-Super.eot?#iefix') format('embedded-opentype'),
+        url('fonts/WhyteInktrap-Super.woff2') format('woff2'),
+        url('fonts/WhyteInktrap-Super.woff') format('woff'),
+        url('fonts/WhyteInktrap-Super.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;300;500;900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/banner.jpg);
+    background-position: left top;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #2d3436;
+    height: 100px;
+    width: 93.4%;
+    padding: 0px 50px;
+}
+
+.logo {
+    height: 100%;
+    width: 25%;
+    float: left;
+    font-size: 35px;
+}
+
+.menu {
+    height: 100%;
+    width: 75%;
+    overflow: hidden;
+}
+
+h2 span {
+    color: #fdcb6e;
+}
+
+h2 {
+    color: #dfe6e9;
+    padding-top: 12px;
+    margin: 10px 0px;
+    font-family: 'Whyte Inktrap Super';
+}
+
+.menu ul {
+    text-align: right;
+    padding-top: 14px;
+    font-size: 18px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-align: right;
+    color: #dfe6e9;
+    text-transform: uppercase;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    padding: 2px 0;
+}
+
+.menu ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    top: 26px;
+    left: 1px;
+    position: absolute;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    background-color: #fdcb6e;
+}
+
+.menu ul li a:hover::after,
+.menu ul li.active a::after {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Service */
+
+.service-area, .content-area {
+    height: 400px;
+    width: 100%;
+    float: left;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.service-content, .content-heading {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+.service-content span, .content-heading span {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #eef0f2;
+    top: 16px;
+    left: 653px;
+    font-size: 39px;
+    position: absolute;
+    z-index: -1;
+}
+
+.box-heading {
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 28px;
+}
+
+.service-box {
+    height: 90%;
+    width: calc(100%/3 - 40px);
+    overflow: hidden;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 0 9px #2d3436;
+    box-sizing: border-box;
+    margin: 0 20px;
+    padding: 40px 0;
+    background-color: #2d3436;
+}
+
+.service-box h4 {
+    background-color: #dfe6e9;
+    padding: 10px 0px;
+    margin-top: 35px;
+}
+
+.fab, .fas {
+    color: #dfe6e9;
+    border-radius: 38px;
+    font-size: 75px;
+    outline: 38px;
+    box-shadow: 1px 0px 15px 6px #fdcb6e;
+}
+
+h4 {
+    margin: 0;
+    margin: 14px 0;
+    font-size: 23px;
+}
+
+p {
+    line-height: 22.5px;
+    text-align: justify;
+    color: #dfe6e9;
+    padding: 0 40px;
+}
+
+/* Content Area */
+.content-box {
+    background-color: #2d3436;
+    height: 85%;
+    width: calc(100%/3 - 40px);
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 20px;
+    box-shadow: 0 0 9px #2d3436;
+}
+
+.youtube-vdo, .google-map {
+    height: 270px;
+    width: 100%;
+}
+
+.vimeo-vdo {
+    height: 272px;
+    width: 100%;
+}
+
+.content-box h4 {
+    color: #dfe6e9;
+    cursor: pointer;
+}
+
+.content-area span {
+    top: 18px;
+    left: 637px;
+}
+
+.content-area {
+    margin: 70px 0;
+}
